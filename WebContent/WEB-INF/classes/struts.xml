@@ -7,12 +7,8 @@
 <constant name="struts.devMode" value="true" />
    <package name="helloworld" extends="struts-default">
      
-      <action name="hello" 
-            class="cn.w3cschool.struts2.HelloWorldAction" 
-            method="execute">
+      <action name="hello" class="cn.w3cschool.struts2.HelloWorldAction" method="execute">
             <result name="success">/HelloWorld.jsp</result>
       </action>
-      
-      
    </package>
 </struts>
