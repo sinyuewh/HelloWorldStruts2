@@ -8,7 +8,8 @@ public class HelloWorldAction{
    }
    
    public String getName() {
-      return name;
+       int i=10;
+	   return name;
    }
 
    public void setName(String name) {
