@@ -1,19 +1,26 @@
 package cn.w3cschool.struts2;
 
-public class HelloWorldAction{
-   private String name;
+import com.opensymphony.xwork2.ActionSupport;
 
-   public String execute() throws Exception {
-      return "success";
-   }
-   
-   public String getName() {
-       int i=10;
-	   return name;
-   }
+public class HelloWorldAction extends ActionSupport{
+	   private String name;
 
-   public void setName(String name) {
+	   public String execute() throws Exception {
+//	      if ("SECRET".equals(name))
+//	      {
+//	         return SUCCESS;
+//	      }else{
+//	         return ERROR;  
+//	      }
+		   System.out.println("---Inside action...."+name);
+		   return SUCCESS;
+	   }
 	   
-	   this.name = name;
-   }
-}
+	   public String getName() {
+	      return name;
+	   }
+
+	   public void setName(String name) {
+	      this.name = name;
+	   }
+	}
